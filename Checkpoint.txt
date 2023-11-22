@@ -1,0 +1,27 @@
+Procedure dot_product(v1,v2 : Array_of float , var ps : float)
+Var
+i : integer
+Begin
+ps := 0;
+i :=0;
+
+While(i<v1.length) do
+ps := ps+v1[i]*v2[i];
+end_while
+write(ps)
+End
+Algorithm ortho_vectors
+Var
+  v1,v2 : Array_of float[];
+  ps : float;
+  i,n : integer;
+Begin
+ write("write v1 and v2 length");
+ read(n)
+For i from 0 to n-1 step 1 do
+   read(v1[i])
+End_For
+For i from 0 to n-1 step 1 do
+   read(v2[i])
+End_For
+End
